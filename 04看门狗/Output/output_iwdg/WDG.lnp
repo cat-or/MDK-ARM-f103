@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"..\..\output\output_iwdg\startup_stm32f103xe.o"
+"..\..\output\output_iwdg\main.o"
+"..\..\output\output_iwdg\stm32f1xx_it.o"
+"..\..\output\output_iwdg\system_stm32f1xx.o"
+"..\..\output\output_iwdg\delay.o"
+"..\..\output\output_iwdg\sys.o"
+"..\..\output\output_iwdg\usart.o"
+"..\..\output\output_iwdg\stm32f1xx_hal.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_cortex.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_dma.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_gpio.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_gpio_ex.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_rcc.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_rcc_ex.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_uart.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_usart.o"
+"..\..\output\output_iwdg\stm32f1xx_hal_iwdg.o"
+"..\..\output\output_iwdg\led.o"
+"..\..\output\output_iwdg\key.o"
+"..\..\output\output_iwdg\wdg.o"
+--library_type=microlib --strict --scatter "..\..\Output\output_iwdg\WDG.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\..\Output\output_iwdg\WDG.map" -o ..\..\Output\output_iwdg\WDG.axf

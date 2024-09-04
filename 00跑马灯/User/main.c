@@ -1,0 +1,37 @@
+#include "./SYSTEM/sys/sys.h"
+#include "./SYSTEM/usart/usart.h"
+#include "./SYSTEM/delay/delay.h"
+#include "./BSP/LED/led.h"
+
+int main(void)
+{
+	HAL_Init(); /* 初始化 HAL 库 */
+	sys_stm32_clock_init(RCC_PLL_MUL9); /* 设置时钟, 72Mhz */
+	delay_init(72); /* 延时初始化 */
+	led_init(); /* 初始化 LED */
+	
+	while (1)
+	{
+		LED0(0); /* LED0 亮 */
+		LED1(1); /* LED1 灭 */
+		delay_ms(500);
+		LED1(0); /* LED1 亮 */
+		LED0(1); /* LED0 灭 */
+		delay_ms(500);
+//        HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
+//        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == 0)
+//        {
+//            LED0(1);
+//            delay_ms(1000);
+//            LED0(0);
+//        }
+//		LED1(1);
+//		LED0(0);
+//		delay_ms(500);
+//		LED1_TOGGLE();
+//		LED0_TOGGLE();
+//		delay_ms(500);
+//		LED1_TOGGLE();
+//		LED0_TOGGLE();
+	}
+}
