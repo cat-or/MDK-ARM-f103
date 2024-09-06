@@ -629,16 +629,16 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       134         10          0          4          0       1847   delay.o
-       132         16          0          0          0       1035   gtim.o
-       104         14          0          0          0        463   led.o
-        68          4          0          0          0     393923   main.o
-        56         22        304          0       1536        928   startup_stm32f103xe.o
-       718         36          0          0          0       4709   sys.o
-       332         30          0          6        200       3569   usart.o
+       134         10          0          4          0       1799   delay.o
+       132         16          0          0          0       1011   gtim.o
+       104         14          0          0          0        451   led.o
+        68          4          0          0          0     393899   main.o
+        56         22        304          0       1536        916   startup_stm32f103xe.o
+       718         36          0          0          0       4613   sys.o
+       332         30          0          6        200       3509   usart.o
 
     ----------------------------------------------------------------------
-      1548        132        336         12       1736     406474   Object Totals
+      1548        132        336         12       1736     406198   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          2          0          0   (incl. Padding)
 
@@ -686,8 +686,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1816        144        336         12       1836     406222   Grand Totals
-      1816        144        336         12       1836     406222   ELF Image Totals
+      1816        144        336         12       1836     405946   Grand Totals
+      1816        144        336         12       1836     405946   ELF Image Totals
       1816        144        336         12          0          0   ROM Totals
 
 ==============================================================================
