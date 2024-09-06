@@ -1,0 +1,12 @@
+--cpu Cortex-M3
+"..\..\output\startup_stm32f103xe.o"
+"..\..\output\main.o"
+"..\..\output\delay.o"
+"..\..\output\sys.o"
+"..\..\output\usart.o"
+"..\..\output\led.o"
+"..\..\output\gtim.o"
+--strict --scatter "..\..\Output\TIMEIRQ.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\..\Output\TIMEIRQ.map" -o ..\..\Output\TIMEIRQ.axf
